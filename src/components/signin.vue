@@ -1,28 +1,29 @@
 <template>
+<div class="inner-block2">
     <div class="vue-tempalte">
-        <form class = "formcolor">
-            <h3>Sign In as Driver</h3>
-
+        <form class = "formcolor">      
+            
             <div class="form-group">
-                <label>Enter Your Username</label>
+                <label class="textstyles">Enter Your Username</label>
                 <input type="username" class="form-control form-control-lg" />
             </div>
 
             <div class="form-group">
-                <label>Password</label>
+                <label class="textstyles">Password</label>
                 <input type="password" class="form-control form-control-lg" />
             </div>
 
-            <button type="submit" class="btn btn-dark btn-lg btn-block" >Sign In</button>
+            <button id ="textstyles" type="submit" class="btn btn-dark btn-lg btn-block" >SIGN IN AS DRIVER</button>
 
-            <p class="forgot-password text-right mt-2 mb-4" >
-                <router-link to="/forgot-password">Forgot password ?</router-link>
+            <p class="forgot-password text-right mt-2 mb-4" id="forgottext" >
+                <router-link to="/forgot-password"  id="forgottext">Forgot password ?</router-link>
             </p>
 
            
 
         </form>
     </div>
+</div>
 </template>
 
 <script>
@@ -33,7 +34,5 @@
     }
 </script>
 <style>
-    .formcolor{
-        background-color: red;
-    }
+   
 </style>
